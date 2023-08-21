@@ -111,7 +111,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
+    bash <(curl -Ls https://github.com/rarescum/v2-ui/raw/master/v2-ui.sh)
     if [[ $? == 0 ]]; then
         echo -e "${green}更新完成，已自动重启面板${plain}"
         exit
